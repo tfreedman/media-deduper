@@ -3,7 +3,7 @@
 # This script takes multiple directories as input, and tells you which files inside those directories contain duplicate audio data.
 # For a variety of reasons, it is possible to have files that produce different cryptographic hashes, but contain the same acoustic data.
 # This can happen if dumb programs inadvertently write to ID3 data, or the ID3 data is intentionally changed to correct something
-# like album art. It can also happen when transcoding between lossless formats.
+# like album art. It can also happen when transcoding between lossless formats, e.g. WAV -> FLAC
 
 # Only files that have the exact same waveform data are considered duplicates. Other perceptual hashing programs can find similar sounding
 # files. We don't care about similar sounding, or things like "this was cropped from a larger file". We only care about 100% identical
